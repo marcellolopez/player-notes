@@ -2,10 +2,10 @@
 
 namespace Database\Factories;
 
-use App\Models\PlayerNote;
-use Illuminate\Database\Eloquent\Factories\Factory;
 use App\Models\Player;
+use App\Models\PlayerNote;
 use App\Models\User;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
  * @extends Factory<PlayerNote>
