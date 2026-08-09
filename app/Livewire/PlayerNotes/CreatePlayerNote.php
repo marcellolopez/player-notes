@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\Livewire\PlayerNotes;
-
 
 use App\Models\Player;
 use App\Models\PlayerNote;
@@ -13,7 +11,6 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Gate;
 use Livewire\Component;
 
-
 class CreatePlayerNote extends Component
 {
     public Player $player;
@@ -22,12 +19,10 @@ class CreatePlayerNote extends Component
 
     public string $successMessage = '';
 
-
     public function mount(Player $player): void
     {
         $this->player = $player;
     }
-
 
     protected function rules(): array
     {
@@ -35,7 +30,6 @@ class CreatePlayerNote extends Component
             'content' => 'required|string|max:1000',
         ];
     }
-
 
     public function save(PlayerNoteRepositoryInterface $repository): void
     {
@@ -64,7 +58,6 @@ class CreatePlayerNote extends Component
             playerId: $this->player->id
         );
     }
-
 
     public function render(): View
     {

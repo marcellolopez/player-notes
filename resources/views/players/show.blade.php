@@ -3,6 +3,16 @@
     <flux:main>
         <div class="mx-auto max-w-7xl space-y-6">
 
+            <div>
+                <a
+                    href="{{ route('players.index') }}"
+                    wire:navigate
+                    class="inline-flex items-center gap-2 text-sm font-medium text-gray-500 transition hover:text-gray-900">
+                    <span>←</span>
+                    Volver a jugadores
+                </a>
+            </div>
+
             <div class="rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
                 <div class="flex items-start justify-between">
                     <div>
