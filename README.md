@@ -146,7 +146,7 @@ En cambio, la eliminación de un usuario que tenga notas asociadas se restringe 
 Clonar el repositorio:
 
 ```bash
-git clone URL_DEL_REPOSITORIO
+git clone https://github.com/marcellolopez/player-notes.git
 cd player-notes
 ```
 
