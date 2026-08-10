@@ -10,6 +10,9 @@ use Illuminate\Database\Eloquent\Collection;
 
 class EloquentPlayerNoteRepository implements PlayerNoteRepositoryInterface
 {
+    /**
+     * @return Collection<int, PlayerNote>
+     */
     public function getByPlayer(Player $player): Collection
     {
         return $player->notes()

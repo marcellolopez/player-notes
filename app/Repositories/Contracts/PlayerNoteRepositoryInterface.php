@@ -9,6 +9,9 @@ use Illuminate\Database\Eloquent\Collection;
 
 interface PlayerNoteRepositoryInterface
 {
+    /**
+     * @return Collection<int, PlayerNote>
+     */
     public function getByPlayer(Player $player): Collection;
 
     public function create(

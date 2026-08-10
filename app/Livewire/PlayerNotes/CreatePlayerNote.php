@@ -24,6 +24,9 @@ class CreatePlayerNote extends Component
         $this->player = $player;
     }
 
+    /**
+     * @return array<string, string>
+     */
     protected function rules(): array
     {
         return [

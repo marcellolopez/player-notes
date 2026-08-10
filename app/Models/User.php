@@ -60,6 +60,9 @@ class User extends Authenticatable
             : $initials;
     }
 
+    /**
+     * @return HasMany<PlayerNote, $this>
+     */
     public function playerNotes(): HasMany
     {
         return $this->hasMany(PlayerNote::class, 'author_id');

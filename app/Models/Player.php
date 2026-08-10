@@ -18,6 +18,9 @@ class Player extends Model
         'email',
     ];
 
+    /**
+     * @return HasMany<PlayerNote, $this>
+     */
     public function notes(): HasMany
     {
         return $this->hasMany(PlayerNote::class);
